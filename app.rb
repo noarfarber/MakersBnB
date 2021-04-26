@@ -6,5 +6,9 @@ class MakersBnb < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  get "/" do
+    erb(:home)
+  end
+
   run! if app_file == $0
 end
