@@ -8,6 +8,16 @@ describe Accommodation do
     end
   end
 
+  context ".all" do
+    it "lists all accommodations" do
+      loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy")
+
+      expect(Accommodation.all[0].title).to eq "Lazy Loft"
+      expect(Accommodation.all[0].price).to eq "100"
+      expect(Accommodation.all[0].description).to eq "It is lazy"
+    end
+  end
+
   context ".add" do
     it "should add a new accommodation in the set of places to stay" do
       title = "House_1"

@@ -22,13 +22,14 @@
  <%= accommodation.title %> <br />
  <%= accommodation.description %> for £<%= accommodation.price %>
   </li>
+  <% end %>
 </div>
 
 <form class="creation" action="/accommodations/add" method="post">
 <input type="text" name="title">
 <input type="text" name="price">
 <input type="text" name="description">
-<input class="create-btn" type="submit" value="Create">
+<input class="create-btn" type="submit" name="Create" value="Create">
 </form>
 
  <footer>
