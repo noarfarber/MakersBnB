@@ -14,7 +14,16 @@
 </head>
 <body>
 <div class="booking-container">
-  
+ <% @booking_cart.map do |booking| %>
+  <li>
+ <%= booking.title %> <br />
+ <%= booking.description %> for £<%= booking.price %>
+  </li>
+  <% end %>
+
+   <form action="/accommodations" method="get">
+      <input type="submit" value="Back to Accommodations" />
+   </form>
 </div>
 </body>
 </html>
