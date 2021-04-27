@@ -13,13 +13,23 @@
     <title>Document</title>
 </head>
 <body>
-<div class="home-container">
-<h1>MakersBnB</h1>
+<div class="accommodation-container">
+<h1>MakersBnB - Places to stay</h1>
 
-<form class="home-form" action="/accommodations">
-<input class="go-to-viewings" type="submit" name="View accommodations" value="View accommodations">
+<div class="accommodation-list" > Accommodations
+<% @accommodations.map do |accommodation| %>
+  <li>
+ <%= accommodation.title %> <br />
+ <%= accommodation.description %> for £<%= accommodation.price %>
+  </li>
+</div>
+
+<form class="creation" action="/accommodations/add" method="post">
+<input type="text" name="title">
+<input type="text" name="price">
+<input type="text" name="description">
+<input class="create-btn" type="submit" value="Create">
 </form>
-
 
  <footer>
   <div class="credit">
@@ -27,5 +37,6 @@
     </div>
 </footer>
 </div>
+    
 </body>
 </html>
