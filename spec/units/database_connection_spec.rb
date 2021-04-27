@@ -17,7 +17,7 @@ describe DatabaseConnection do
   describe ".query(sql)" do
     it "executes a given SQL query using PG" do
       connection = DatabaseConnection.setup("makersBnB_test")
-      sql = "SELECT * FROM peeps"
+      sql = "SELECT * FROM accommodation;"
 
       expect(connection).to receive(:exec).with(sql)
       DatabaseConnection.query(sql)

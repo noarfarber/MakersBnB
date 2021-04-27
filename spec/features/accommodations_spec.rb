@@ -18,3 +18,13 @@ feature "The user" do
     expect(page).to have_content("A nice house by the beach for £69")
   end
 end
+
+feature 'List all accommodation' do
+  scenario 'the user wants to see all listings' do
+    loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy")
+    visit "/accommodations"
+    expect(page).to have_content("#{loft.title}")
+    expect(page).to have_content("#{loft.price}")
+    expect(page).to have_content("#{loft.description}")
+  end
+end
