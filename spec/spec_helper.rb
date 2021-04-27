@@ -1,4 +1,4 @@
-ENV["ENVIRONEMENT"] = "test"
+ENV["ENVIRONMENT"] = "test"
 
 require "simplecov"
 require "simplecov-console"
