@@ -7,26 +7,9 @@
           1,
           1,
           1,
-          1,
-          1,
           null,
           null,
           null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
           1,
           1,
           1,
@@ -35,40 +18,12 @@
           null
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/units/accommodation_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/units/accommodation_spec.rb": {
         "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          4,
-          null,
-          null,
-          null
+
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/units/database_connection_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/units/database_connection_spec.rb": {
         "lines": [
           1,
           null,
@@ -91,6 +46,15 @@
           1,
           1,
           null,
+          null,
+          null
+        ]
+      },
+        "lines": [
+          1,
+          null,
+          1,
+          1,
           1,
           1,
           null,
@@ -99,6 +63,5 @@
         ]
       }
     },
-    "timestamp": 1619533736
   }
 }
