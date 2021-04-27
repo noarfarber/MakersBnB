@@ -1,0 +1,1 @@
+CREATE TABLE accommodation (id SERIAL PRIMARY KEY,title VARCHAR(60) UNIQUE NOT NULL,description VARCHAR(280),price INT)
