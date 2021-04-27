@@ -2,10 +2,10 @@ require 'pg'
 
 class DatabaseConnection
   def self.setup(db)
-    @conn = PG.connect(dbname: db)
+    @conn = PG.connect(dbname: db, user: 'postgres', password: 'postgres')
   end
 
-  def self.
+  def self.db
     @conn
   end
 

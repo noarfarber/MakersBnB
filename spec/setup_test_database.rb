@@ -1,6 +1,6 @@
 require "pg"
 
 def setup_test_database
-  conn = PG.connect(dbname: "placeholder_test")
-  conn.exec("TRUNCATE TABLE ;")
+  conn = PG.connect(dbname: "makersBnB_test", user: 'postgres', password: 'postgres')
+  conn.exec("TRUNCATE TABLE accommodation;")
 end

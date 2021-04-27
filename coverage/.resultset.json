@@ -1,42 +1,86 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/units/database_connection_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/features/accomodations_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/units/accommodation_spec.rb": {
+        "lines": [
+
+        ]
+      },
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/units/database_connection_spec.rb": {
         "lines": [
           1,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null,
           null,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/lib/database_connection.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/lib/database_connection.rb": {
         "lines": [
-
+          1,
+          null,
+          1,
+          1,
+          3,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
         ]
       }
     },
-    "timestamp": 1619453987
+    "timestamp": 1619520474
   }
 }
