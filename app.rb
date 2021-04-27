@@ -1,7 +1,7 @@
 require "sinatra/base"
 require "sinatra/reloader"
-require './lib/accommodation'
-require './database_connection_setup'
+require "./lib/accommodation"
+require "./database_connection_setup"
 
 class MakersBnb < Sinatra::Base
   configure :development do
@@ -22,8 +22,10 @@ class MakersBnb < Sinatra::Base
     redirect "/accommodations"
   end
 
-  get "/accommodations/:id/bookings" do 
-    @accommodation = Accommodation.find(id: params[:id])
+  get "/accommodations/:id/bookings" do
+    @booking_cart = []
+    @booking_cart << Accommodation.find(id: params[:id])
+    p @booking_cart
     erb(:bookings)
   end
 
