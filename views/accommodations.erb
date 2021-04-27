@@ -21,6 +21,10 @@
   <li>
  <%= accommodation.title %> <br />
  <%= accommodation.description %> for £<%= accommodation.price %>
+
+   <form action="/accommodations/<%= accommodation.id %>/bookings" method="get">
+      <input type="submit" value="Select" />
+   </form>
   </li>
   <% end %>
 </div>

@@ -22,5 +22,10 @@ class MakersBnb < Sinatra::Base
     redirect "/accommodations"
   end
 
+  get "/accommodations/:id/bookings" do 
+    @accommodation = Accommodation.find(id: params[:id])
+    erb(:bookings)
+  end
+
   run! if app_file == $0
 end

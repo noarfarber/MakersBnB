@@ -26,4 +26,12 @@ describe Accommodation do
       expect { Accommodation.add(title: title, price: price, description: description) }.to change { Accommodation.all.length }.by 1
     end
   end
+
+  context ".find" do
+    it "should return the requested accommodation" do
+      haunted_house = Accommodation.add(title: "haunted", price: 600, description: "It is scary")
+      return_this_house = Accommodation.find(id: haunted_house.id)
+      expect(return_this_house.title).to eq "haunted" 
+    end
+  end 
 end

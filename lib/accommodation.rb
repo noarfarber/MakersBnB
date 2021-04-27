@@ -23,4 +23,9 @@ class Accommodation
       Accommodation.new(id: new_space['id'], title: new_space['title'], price: new_space['price'], description: new_space['description'])
     end
   end
+
+  def self.find(id:)
+    new_space = DatabaseConnection.query("SELECT * FROM accommodation WHERE id = '#{id}';")
+    Accommodation.new(id: new_space[0]["id"], title: new_space[0]["title"], price: new_space[0]["price"], description: new_space[0]["description"])
+  end
 end
