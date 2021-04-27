@@ -1,15 +1,50 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/features/accommodations_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/features/accommodations_spec.rb": {
         "lines": [
           1,
           1,
           1,
           1,
+          1,
+          1,
           null,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -20,7 +55,43 @@
       },
       "/Users/noafarber/Projects/week_5/MakersBnB/spec/units/accommodation_spec.rb": {
         "lines": [
-
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
         ]
       },
       "/Users/noafarber/Projects/week_5/MakersBnB/spec/units/database_connection_spec.rb": {
@@ -46,15 +117,6 @@
           1,
           1,
           null,
-          null,
-          null
-        ]
-      },
-        "lines": [
-          1,
-          null,
-          1,
-          1,
           1,
           1,
           null,
@@ -63,5 +125,6 @@
         ]
       }
     },
+    "timestamp": 1619539181
   }
 }
