@@ -97,6 +97,19 @@
           null
         ]
       },
+      "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/features/login_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/units/accommodation_spec.rb": {
         "lines": [
           1,
@@ -221,6 +234,6 @@
         ]
       }
     },
-    "timestamp": 1619645930
+    "timestamp": 1619650598
   }
 }

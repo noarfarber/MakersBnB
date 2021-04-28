@@ -19,7 +19,7 @@ body {
 
 }
 
-.home-container, .booking-container, .accommodation-container, .signup-container {
+.home-container, .booking-container, .accommodation-container, .signup-container, .login-container {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   height: 100vh;
@@ -27,7 +27,7 @@ body {
 
 }
 
-.home-container > header > h1 {
+.home-container > header > h1, .login-container > header > h1 {
   color: #394867;
   display: flex;
   justify-content: center;
@@ -82,7 +82,7 @@ body {
     border: none;
 }
 
-.signup-btn, .create-btn, .accom-choice-btn, .Book-btn, .choose-again {
+.signup-btn, .create-btn, .accom-choice-btn, .Book-btn, .logger {
   background-color: #00334e;
     color: #fe7171;
     font-size: 14px;
@@ -91,7 +91,7 @@ body {
     border: none;
 }
 
-.go-to-signup:hover, .go-to-login:hover, .signup-btn:hover, .create-btn:hover, .accom-choice-btn:hover, .Book-btn:hover {
+.go-to-signup:hover, .go-to-login:hover, .signup-btn:hover, .create-btn:hover, .accom-choice-btn:hover, .Book-btn:hover, .logger:hover {
   cursor: pointer;
   background-color: #eb8f12;
   color: #00334e;

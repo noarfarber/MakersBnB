@@ -14,25 +14,25 @@
     <title>Document</title>
 </head>
 <body>
-<div class="home-container">
+<div class="login-container">
 <header>
-<h1>MakersBnB</h1>
+<h1>BnB's Login</h1>
 </header>
 
-<div class="home-buttons">
-<form class="signup-home" action="/signup">
-<input class="go-to-signup" type="submit" name="Sign up" value="Sign up">
+<form class="login-form" action="/login/new" method="post">
+  <label for="">Username: </label><input type="text" name="username" required><br />
+  <label for="">Password: </label><input type="password" name="password" required><br />
+  <input class="logger" type="submit" value="Go">
 </form>
 
-<form class="login-home" action="/login" method="get">
-<input class="go-to-login" type="submit" name="Login" value="Login">
-</form>
-</div>
+
+
+
  <footer>
   <div class="credit">
       <p>&copy; TooMuchSauce &nbsp;-&nbsp; Blue March 2021</p>
     </div>
 </footer>
-</div>
+</div>    
 </body>
 </html>
