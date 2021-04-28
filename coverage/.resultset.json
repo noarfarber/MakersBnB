@@ -146,8 +146,61 @@
           null,
           null
         ]
+      },
+      "/Users/dominicmeddick/Documents/Makers/Week5/MakersBnB/spec/units/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          4,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/dominicmeddick/Documents/Makers/Week5/MakersBnB/lib/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          7,
+          7,
+          7,
+          7,
+          7,
+          null,
+          null,
+          1,
+          6,
+          6,
+          5,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1619608135
+    "timestamp": 1619617109
   }
 }
