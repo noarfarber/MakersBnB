@@ -1,12 +1,18 @@
 require "sinatra/base"
 require "sinatra/reloader"
 require "./lib/accommodation"
+require "./lib/user"
 require "./database_connection_setup"
 
 class MakersBnb < Sinatra::Base
+  enable :sessions
   configure :development do
     register Sinatra::Reloader
   end
+
+  # before do
+  #   @current_user = session[:user_id]
+  # end
 
   get "/" do
     erb(:home)
@@ -17,11 +23,13 @@ class MakersBnb < Sinatra::Base
   end
 
   post '/signup/new' do 
-   @user = User.create(name: params[:name], username: params[:username], email: params[:email], password: params[:password])
-   redirect '/accommodations'
+    user = User.create(name: params[:name], username: params[:username], email: params[:email], password: params[:password])
+    session[:user_id] = user.id
+    redirect '/accommodations'
   end
 
   get "/accommodations" do
+    @user = User.find(id: session[:user_id])
     @accommodations = Accommodation.all
     erb(:accommodations)
   end

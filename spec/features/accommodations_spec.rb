@@ -1,7 +1,8 @@
 feature "Create button" do
   scenario "should appear when you get to accommodations" do
     visit "/"
-    click_button("View accommodations")
+    click_button("Sign up")
+    click_button("Create user")
     expect(current_path).to eq "/accommodations"
     expect(page).to have_button "Create"
   end
@@ -9,6 +10,8 @@ end
 
 feature "The user" do
   scenario "should be able to create a new accommodation" do
+    visit "/signup"
+    click_button("Create user")
     visit "/accommodations"
     fill_in("title", with: "Beach house")
     fill_in("description", with: "A nice house by the beach")
@@ -32,6 +35,8 @@ end
 feature 'Create select button' do
   scenario 'should appear on the page accommodations' do
     loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy")
+    visit "/signup"
+    click_button("Create user")
     visit "/accommodations"
     expect(page).to have_button("Select")
   end
@@ -40,7 +45,8 @@ end
 feature 'Clicking in select' do
   scenario 'should select the given accommodation and get the user to bookings page' do
     loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy")
-    visit "/accommodations"
+    visit "/signup"
+    click_button("Create user")
     click_button("Select")
     expect(current_path).to eq "/accommodations/#{loft.id}/bookings"
     expect(page).to have_content("#{loft.title}") 

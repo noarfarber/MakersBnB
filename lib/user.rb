@@ -1,3 +1,5 @@
+require 'pg'
+
 class User
 
   attr_reader :id, :name, :username, :password, :email
@@ -21,5 +23,10 @@ class User
     new_user = DatabaseConnection.query("INSERT INTO users(name, username, email, password) VALUES('#{name}', '#{username}', '#{email}', '#{password}')
     RETURNING id, name, username, email, password")
     User.new(id: new_user[0]['id'], name: new_user[0]['name'], username: new_user[0]['username'], email: new_user[0]['email'], password: new_user[0]['password'])
+  end
+
+  def self.find(id:)
+    find_user = DatabaseConnection.query("SELECT * FROM users WHERE id = '#{id}';")
+    User.new(id: find_user[0]['id'], name: find_user[0]['name'], username: find_user[0]['username'], email: find_user[0]['email'], password: find_user[0]['password'])
   end
 end
