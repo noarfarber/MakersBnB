@@ -17,4 +17,12 @@ describe User do
       expect { User.create(name: "Dom", username: "dommakers", email: "dom@makers.com", password: "password") }.to change { User.all.length }.by 1
     end
   end
+
+  context '.find' do
+    it 'finds a specific user' do
+      noa = User.create(name: "Noa", username: "noatheboa", password: "noa123", email: "noa@gmail.com")
+      return_noa = User.find(id: noa.id)
+      expect(return_noa.name).to eq "Noa" 
+    end
+  end
 end
