@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<%= url("all_style.css") %>" type="text/css">
+    <link rel="stylesheet" href="<%= url("too_much.css") %>" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 <div class="signup-container">
+<header class="signup-header">
+<h1>MakersBnB - Registration</h1>
+</header>
 
 <form class="signup-form" action="/signup/new" method="post">
-  <label > Name: </label><input type="text" name="name"> <br />
-  <label > Username: </label><input type="text" name="username"> <br />
-  <label > Email: </label><input type="email" name="email"> <br />
-  <label > Password: </label><input type="password" name="password"> <br />
+  <label > Name: </label><input type="text" name="name" required>
+  <label > Username: </label><input type="text" name="username" required> <br />
+  <label > Email: </label><input type="email" name="email" required>
+  <label > Password: </label><input type="password" name="password" required> <br />
   <input class="signup-btn" type="submit" value="Create user" />
   </form>
 

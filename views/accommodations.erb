@@ -4,40 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<%= url("all_style.css") %>" type="text/css">
+    <link rel="stylesheet" href="<%= url("too_much.css") %>" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 <div class="accommodation-container">
-<h1>MakersBnB - Places to stay</h1>
-
-<h2> Welcome  <%= @user.name %> </h2>
+<header>
+<h2> Welcome  <%= @user.username %></h2>
+</header>
 
 <div class="accommodation-list" > Accommodations
+
 <% @accommodations.map do |accommodation| %>
   <li>
  <%= accommodation.title %> <br />
  <%= accommodation.description %> for £<%= accommodation.price %>
 
    <form action="/accommodations/<%= accommodation.id %>/bookings" method="get">
-      <input type="submit" value="Select" />
+      <input class="accom-choice-btn" type="submit" value="Select" />
    </form>
   </li>
   <% end %>
 </div>
 
+<div>Become a host
 <form class="creation" action="/accommodations/add" method="post">
-<input type="text" name="title">
-<input type="text" name="price">
-<input type="text" name="description">
+<br /><label for="">Name: </label><input type="text" name="title">
+<label for="">Price: </label><input type="text" name="price"> <br />
+<label for="">Description: </label><input type="text" name="description" style="width: 300px; height:60px;">
 <input class="create-btn" type="submit" name="Create" value="Create">
 </form>
-
+</div>
  <footer>
   <div class="credit">
       <p>&copy; TooMuchSauce &nbsp;-&nbsp; Blue March 2021</p>
