@@ -7,8 +7,7 @@ end
 
 feature "Takes you to signup page" do
   scenario "goes to signup page" do 
-    visit '/'
-    click_button "Sign up"
+    visit_home_sign_up
     expect(current_path).to eq "/signup"
     expect(page).to have_content("Name")
     expect(page).to have_content("Username")
