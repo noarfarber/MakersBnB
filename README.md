@@ -33,7 +33,7 @@ TUESDAY - Day 2:
 -------
 * We started, in earnest, implementing our three MVP user stories
 * We also worked on some diagramming to start visualising the user journey through the site, from signing/logging in, browsing accommodation, selecting and booking
-![flowchart]()
+![flowchart](https://github.com/noarfarber/MakersBnB/blob/master/images/Flowchart.jpg)
 * We created our first `Accommodation` class giving it `.all`, `.add` and `.find` methods, the first steps to creating a full CRUD application
 * By the end of the day, we were halfway through the third user story 
 
