@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/features/accommodations_spec.rb": {
+      "/Users/dominicmeddick/Documents/Makers/Week5/MakersBnB/spec/features/accommodations_spec.rb": {
         "lines": [
           1,
           1,
@@ -53,7 +53,30 @@
           null
         ]
       },
-      "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/units/accommodation_spec.rb": {
+      "/Users/dominicmeddick/Documents/Makers/Week5/MakersBnB/spec/features/homepage_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/dominicmeddick/Documents/Makers/Week5/MakersBnB/spec/units/accommodation_spec.rb": {
         "lines": [
           1,
           null,
@@ -94,7 +117,7 @@
           null
         ]
       },
-      "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/units/database_connection_spec.rb": {
+      "/Users/dominicmeddick/Documents/Makers/Week5/MakersBnB/spec/units/database_connection_spec.rb": {
         "lines": [
           1,
           null,
@@ -125,6 +148,6 @@
         ]
       }
     },
-    "timestamp": 1619541280
+    "timestamp": 1619608135
   }
 }
