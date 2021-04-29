@@ -10,6 +10,10 @@ class MakersBnb < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  before do
+    @current_user = session[:user_id]
+  end
+
   get "/" do
     erb(:home)
   end
@@ -45,7 +49,7 @@ class MakersBnb < Sinatra::Base
   end
 
   post "/accommodations/add" do
-    Accommodation.add(title: params[:title], price: params[:price], description: params[:description])
+    Accommodation.add(title: params[:title], price: params[:price], description: params[:description], user_id: @current_user)
     redirect "/accommodations"
   end
 

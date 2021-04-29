@@ -1,4 +1,5 @@
 require "accommodation"
+require "user"
 
 describe Accommodation do
   context "#initialize" do
@@ -10,7 +11,8 @@ describe Accommodation do
 
   context ".all" do
     it "lists all accommodations" do
-      loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy")
+      user = User.create(name: "Jesus", username: "Allah", email: "god@email.com", password: "passgod")
+      loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy", user_id: user.id)
 
       expect(Accommodation.all[0].title).to eq "Lazy Loft"
       expect(Accommodation.all[0].price).to eq "100"
@@ -20,18 +22,20 @@ describe Accommodation do
 
   context ".add" do
     it "should add a new accommodation in the set of places to stay" do
+      user = User.create(name: "Jesus", username: "Allah", email: "god@email.com", password: "passgod")
       title = "House_1"
       description = "This little house is the first one"
       price = 100
-      expect { Accommodation.add(title: title, price: price, description: description) }.to change { Accommodation.all.length }.by 1
+      expect { Accommodation.add(title: title, price: price, description: description, user_id: user.id) }.to change { Accommodation.all.length }.by 1
     end
   end
 
   context ".find" do
     it "should return the requested accommodation" do
-      haunted_house = Accommodation.add(title: "haunted", price: 600, description: "It is scary")
+      user = User.create(name: "Jesus", username: "Allah", email: "god@email.com", password: "passgod")
+      haunted_house = Accommodation.add(title: "haunted", price: 600, description: "It is scary", user_id: user.id)
       return_this_house = Accommodation.find(id: haunted_house.id)
-      expect(return_this_house.title).to eq "haunted" 
+      expect(return_this_house.title).to eq "haunted"
     end
-  end 
+  end
 end
