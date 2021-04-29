@@ -2,6 +2,7 @@ require "sinatra/base"
 require "sinatra/reloader"
 require "./lib/accommodation"
 require "./lib/user"
+require "./lib/booking"
 require "./database_connection_setup"
 
 class MakersBnb < Sinatra::Base
@@ -56,7 +57,15 @@ class MakersBnb < Sinatra::Base
   get "/accommodations/:id/bookings" do
     @booking_cart = []
     @booking_cart << Accommodation.find(id: params[:id])
+    @host_name = Accommodation.find(id: params[:id])
     erb(:bookings)
+  end
+
+  post "/accommodations/:id/bookings/new" do
+    Booking.create(date: params[:date], host_id: params[:id], tenant_id: @current_user)
+    @user_booked = User.find(id: session[:user_id])
+    p @user_booked
+    erb(:confirmation)
   end
 
   run! if app_file == $0

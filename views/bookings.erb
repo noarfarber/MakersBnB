@@ -21,12 +21,12 @@
  <%= booking.description %> for £<%= booking.price %>
   </li>
 
-  <form class="confirmation-form" action="/booking success">
+  <form class="confirmation-form" action="/accommodations/<%= booking.id %>/bookings/new" method="post">
   <label for="">Name: </label><%= booking.title %> <br />
-  <label for="">Host: </label><br />
+  <label for="">Host: </label><%= booking.id %><br />
   <label for="">Description: </label><%= booking.description %><br />
   <label for="">Price: </label>£<%= booking.price %><br />
-  <label for="">Date: </label><input type="Date"><br />
+  <label for="">Date: </label><input type="Date" name="date" class="date" required><br />
   <input class="Book-btn" type="submit" value="Book">
   </form>
   <% end %>
