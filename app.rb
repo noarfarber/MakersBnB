@@ -4,11 +4,13 @@ require "./lib/accommodation"
 require "./lib/user"
 require "./lib/booking"
 require "./database_connection_setup"
+require "sinatra/flash"
 
 class MakersBnb < Sinatra::Base
   enable :sessions
   configure :development do
     register Sinatra::Reloader
+    register Sinatra::Flash
   end
 
   before do
@@ -57,15 +59,19 @@ class MakersBnb < Sinatra::Base
   get "/accommodations/:id/bookings" do
     @booking_cart = []
     @booking_cart << Accommodation.find(id: params[:id])
-    @host_name = Accommodation.find(id: params[:id])
     erb(:bookings)
   end
 
   post "/accommodations/:id/bookings/new" do
-    Booking.create(date: params[:date], host_id: params[:id], tenant_id: @current_user)
-    @user_booked = User.find(id: session[:user_id])
-    p @user_booked
-    erb(:confirmation)
+    if Booking.booked?(date: params[:date])
+      flash[:notice] = "This accommodation already booked for this date."
+      redirect "/accommodations"
+    else
+      Booking.create(date: params[:date], host_id: params[:id], tenant_id: @current_user)
+      @user_booked = User.find(id: session[:user_id])
+      flash[:success] = "Your booking is confirmed."
+      erb(:confirmation)
+    end
   end
 
   run! if app_file == $0

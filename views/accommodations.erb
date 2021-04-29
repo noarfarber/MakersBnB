@@ -17,6 +17,9 @@
 <div class="accommodation-container">
 <header>
 <h2> Welcome  <%= @user.username %></h2>
+<%if flash[:notice] %>
+<h3><%= flash[:notice] %></h3>
+<% end %>
 </header>
 
 <div class="accommodation-list" > Accommodations
@@ -33,7 +36,7 @@
   <% end %>
 </div>
 
-<div>Become a host
+<div class="host-making">Become a host
 <form class="creation" action="/accommodations/add" method="post">
 <br /><label for="">Name: </label><input type="text" name="title">
 <label for="">Price: </label><input type="text" name="price"> <br />

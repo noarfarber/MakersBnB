@@ -15,6 +15,7 @@
 </head>
 <body>
 <div class="booking-container">
+
  <% @booking_cart.map do |booking| %>
   <li>
  <%= booking.title %> <br />
@@ -30,6 +31,8 @@
   <input class="Book-btn" type="submit" value="Book">
   </form>
   <% end %>
+  
+
 
    <form action="/accommodations" method="get">
       <input class="choose-again" type="submit" value="Back to Accommodations" />

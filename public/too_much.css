@@ -19,7 +19,7 @@ body {
 
 }
 
-.home-container, .booking-container, .accommodation-container, .signup-container, .login-container {
+.home-container, .booking-container, .accommodation-container, .signup-container, .login-container, .confirmation-container {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   height: 100vh;

@@ -16,8 +16,11 @@
 <body>
 <div class="confirmation-container">
 <header>
-<h2> Pack your bags <%= @user_booked.username %>!</h2>
+<h2><%= flash[:success] %></h2>
 </header>
+
+<h2> Pack your bags <%= @user_booked.username %>!</h2>
+
 
  <footer>
   <div class="credit">
