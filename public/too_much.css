@@ -1,0 +1,124 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    
+}
+body {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #acc0df, #9acfe1, #9ddad3, #bce0be, #e6e1b2);
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+.home-container, .booking-container, .accommodation-container, .signup-container, .login-container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  height: 100vh;
+  gap: 1%;
+
+}
+
+.home-container > header > h1, .login-container > header > h1 {
+  color: #394867;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-family: 'Ultra', serif;
+}
+
+.signup-container > header > h1 {
+  color: #394867;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-family: 'Ultra', serif;
+}
+
+.accommodation-container > header > h2 {
+  color: #394867;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  margin: 40px;
+  font-family: 'Ultra', serif;
+}
+
+.accommodation-list {
+  align-items: center;
+}
+
+.home-container > form, .signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form > label, .creation > label {
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #394867;
+  border: none;
+  border-radius: 12px;
+}
+
+
+.go-to-signup, .go-to-login, .signup-btn, .create-btn, .accom-choice-btn, .choose-again {
+  background-color: #00334e;
+    color: #fe7171;
+    font-size: 24px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    border: none;
+}
+
+.signup-btn, .create-btn, .accom-choice-btn, .Book-btn, .logger {
+  background-color: #00334e;
+    color: #fe7171;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: none;
+}
+
+.go-to-signup:hover, .go-to-login:hover, .signup-btn:hover, .create-btn:hover, .accom-choice-btn:hover, .Book-btn:hover, .logger:hover {
+  cursor: pointer;
+  background-color: #eb8f12;
+  color: #00334e;
+}
+
+.host-making {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-buttons > form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer {
+  font-family: 'Black Han Sans', sans-serif;
+    
+}
+
+.credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222831;
+  font-size: 15px;
+}

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<%= url("all_style.css") %>" type="text/css">
+    <link rel="stylesheet" href="<%= url("too_much.css") %>" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -19,10 +20,19 @@
  <%= booking.title %> <br />
  <%= booking.description %> for £<%= booking.price %>
   </li>
+
+  <form class="confirmation-form" action="/booking success">
+  <label for="">Name: </label><%= booking.title %> <br />
+  <label for="">Host: </label><br />
+  <label for="">Description: </label><%= booking.description %><br />
+  <label for="">Price: </label>£<%= booking.price %><br />
+  <label for="">Date: </label><input type="Date"><br />
+  <input class="Book-btn" type="submit" value="Book">
+  </form>
   <% end %>
 
    <form action="/accommodations" method="get">
-      <input type="submit" value="Back to Accommodations" />
+      <input class="choose-again" type="submit" value="Back to Accommodations" />
    </form>
 </div>
 </body>
