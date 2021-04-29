@@ -59,15 +59,16 @@
       },
       "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/features/bookings_spec.rb": {
         "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -81,7 +82,6 @@
           1,
           1,
           1,
-          null,
           1,
           1,
           null,
@@ -294,6 +294,6 @@
         ]
       }
     },
-    "timestamp": 1619717987
+    "timestamp": 1619723283
   }
 }

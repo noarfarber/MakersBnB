@@ -29,9 +29,9 @@ describe User do
 
   context ".authenticate" do
     it "should return the user if the login is correct" do
-      TooMuchSauce = User.create(name: "Team", username: "TooMuchSauce", password: "okthisisacorrectpassword", email: "tms@makers.com")
-      Auth_TooMuchSauce = User.authenticate(username: "TooMuchSauce", password: "okthisisacorrectpassword")
-      expect(Auth_TooMuchSauce.name).to eq "Team"
+      secret_user = User.create(name: "Team", username: "TooMuchSauce", password: "okthisisacorrectpassword", email: "tms@makers.com")
+      auth_secret_user = User.authenticate(username: "TooMuchSauce", password: "okthisisacorrectpassword")
+      expect(auth_secret_user.name).to eq "Team"
     end
 
     it "should return nothing or nil if the username is incorrect" do
@@ -41,7 +41,7 @@ describe User do
     end
 
     it "should return nothing if the password is incorrect" do
-      TooMuchSauce = User.create(name: "Team", username: "TooMuchSauce", password: "okthisisacorrectpassword", email: "tms@makers.com")
+      nil_user = User.create(name: "Team", username: "TooMuchSauce", password: "okthisisacorrectpassword", email: "tms@makers.com")
       expect(User.authenticate(username: "TooMuchSauce", password: "notthegoodone")).to be_nil
     end
   end
