@@ -32,6 +32,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null,
@@ -40,9 +41,11 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null,
+          1,
           1,
           1,
           1,
@@ -91,10 +94,8 @@
           null
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/features/sign_up_spec.rb": {
+      "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/features/login_spec.rb": {
         "lines": [
-          1,
-          1,
           1,
           1,
           1,
@@ -106,8 +107,10 @@
           null
         ]
       },
-      "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/features/login_spec.rb": {
+      "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/features/sign_up_spec.rb": {
         "lines": [
+          1,
+          1,
           1,
           1,
           1,
@@ -122,25 +125,28 @@
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/units/accommodation_spec.rb": {
         "lines": [
           1,
-          null,
-          1,
-          1,
-          1,
-          1,
           1,
           null,
-          null,
-          null,
           1,
           1,
-          1,
-          null,
           1,
           1,
           1,
           null,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
           1,
           1,
           1,
@@ -150,6 +156,7 @@
           null,
           null,
           null,
+          1,
           1,
           1,
           1,
@@ -243,6 +250,6 @@
         ]
       }
     },
-    "timestamp": 1619632718
+    "timestamp": 1619696504
   }
 }
