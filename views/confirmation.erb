@@ -17,31 +17,30 @@
 <div class="confirmation-container">
   
 <header>
+
+<h1> Pack your bags <%= @user_booked.username %>!</h1><br />
 <h2><%= flash[:success] %></h2>
 </header>
 
-<h1> Pack your bags <%= @user_booked.username %>!</h1>
 
-
+<main class="final-main">
 <h2>Your stay is booked for <%= @booking.date %> </h2>
 
+</main>
+
+<div class="go-back">
 <form action="/accommodations" method="get">
-<input class="choose-again" type="submit" value="Back to Accommodations" />
+<input class="choose-again" type="submit" value="Accommodations" />
 </form>
-
-<h2> Pack your bags <%= @user_booked.username %>!</h2>
-
-
+<form action="/accommodations/logout" method='post'>
+  <input class=logout-btn type="submit" value='Logout'>
+</form>
+</div>
  <footer>
   <div class="credit">
       <p>&copy; TooMuchSauce &nbsp;-&nbsp; Blue March 2021</p>
     </div>
 </footer>
-</div>
-
-<form action="/accommodations/logout" method='post'>
-  <input type="submit" value='Logout'>
-</form>
-   
+   </div>
 </body>
 </html>

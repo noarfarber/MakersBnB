@@ -86,7 +86,7 @@ body {
     border: none;
 }
 
-.signup-btn, .create-btn, .accom-choice-btn, .Book-btn, .logger, .choose-again {
+.signup-btn, .create-btn, .accom-choice-btn, .Book-btn, .logger {
   background-color: #00334e;
     color: #fe7171;
     font-size: 14px;
@@ -95,7 +95,17 @@ body {
     border: none;
 }
 
-.go-to-signup:hover, .go-to-login:hover, .signup-btn:hover, .create-btn:hover, .accom-choice-btn:hover, .Book-btn:hover, .logger:hover {
+.logout-btn, .choose-again {
+  background-color: #00334e;
+  color: #fe7171;
+  font-size: 14px;
+  padding: 10px 6px;
+  border-radius: 12px;
+  border: none;
+  display: flex;
+}
+
+.go-to-signup:hover, .go-to-login:hover, .signup-btn:hover, .create-btn:hover, .accom-choice-btn:hover, .Book-btn:hover, .logger:hover, .logout-btn:hover, .choose-again:hover {
   cursor: pointer;
   background-color: #eb8f12;
   color: #00334e;
@@ -113,13 +123,13 @@ body {
   align-items: center;
 }
 
-.main-login, .main-accom, .lets-book {
+.main-login, .main-accom, .lets-book, .final-main {
   display: grid;
   grid-template-columns: 300px auto 300px;
   border-radius: 12px;
 }
 
-.login-form {
+.login-form, .final-main {
   display: flex;
   justify-content: center;
   align-items: center;
