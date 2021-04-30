@@ -16,10 +16,11 @@
 <body>
 <div class="accommodation-container">
 <header>
-<h2> Welcome  <%= @user.username %></h2> <br /> 
+<h2> Accomodations for you, <%= @user.username %></h2> <br /> 
 <%if flash[:notice] %>
 <h3><%= flash[:notice] %></h3>
 <% end %>
+
 </header>
 
 <main class="main-accom">
@@ -46,14 +47,15 @@
 <label for="">Description: </label><input type="text" name="description" style="width: 300px; height:60px;">
 <input class="create-btn" type="submit" name="Create" value="Become a host">
 </form>
+
+</div>
+</div>
+
+<div class="right">
 <form action="/accommodations/logout" method='post'>
-  <input type="submit" value='Logout'>
+  <input class="logout-btn" type="submit" value='Logout'>
 </form>
-
 </div>
-</div>
-
-<div class="right"></div>
 
 </main>
  <footer>
