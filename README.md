@@ -93,9 +93,9 @@ Testing database setup:
 
 Built using:
 -------
+* Sinatra
 * RSpec
 * Capybara
-* Sinatra
 * PostgreSQL
 * Bcrypt
 * Ruby
