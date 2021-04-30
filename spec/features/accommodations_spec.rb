@@ -22,8 +22,8 @@ end
 
 feature 'List all accommodation' do
   scenario 'the user wants to see all listings' do
-    Jesus = User.create(name: "Jesus", username: "Allah", email: "god@email.com", password: "passgod")
-    loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy", user_id: Jesus.id)
+    mj = User.create(name: "Jesus", username: "Allah", email: "god@email.com", password: "passgod")
+    loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy", user_id: mj.id)
     visit "/accommodations"
     expect(page).to have_content("#{loft.title}")
     expect(page).to have_content("#{loft.price}")
@@ -33,8 +33,7 @@ end
 
 feature 'Create select button' do
   scenario 'should appear on the page accommodations' do
-    mj = User.create(name: "Jesus", username: "Allah", email: "god@email.com", password: "passgod")
-    loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy", user_id: mj.id)
+    user_create_accommodation_add
     sign_up_create_user_visit_accommodations
     expect(page).to have_button("Select")
   end
@@ -42,8 +41,8 @@ end
 
 feature 'Clicking in select' do
   scenario 'should select the given accommodation and get the user to bookings page' do
-    lol = User.create(name: "Jesus", username: "Allah", email: "god@email.com", password: "passgod")
-    loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy", user_id: lol.id)
+    mj = User.create(name: "Jesus", username: "Allah", email: "god@email.com", password: "passgod")
+    loft = Accommodation.add(title: "Lazy Loft", price: 100, description: "It is lazy", user_id: mj.id)
     sign_up_create_user_visit_accommodations
     click_button("Select")
     expect(current_path).to eq "/accommodations/#{loft.id}/bookings"
