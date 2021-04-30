@@ -63,7 +63,7 @@ class MakersBnb < Sinatra::Base
   end
 
   post "/accommodations/:id/bookings/new" do
-    if Booking.booked?(date: params[:date])
+    if Booking.booked?(id: params[:id], date: params[:date])
       flash[:notice] = "This accommodation already booked for this date."
       redirect "/accommodations"
     else

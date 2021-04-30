@@ -38,8 +38,8 @@ class Booking
                 tenant_id: find_booking[0]["tenant_id"])
   end
 
-  def self.booked?(date:)
-    booked_acc = DatabaseConnection.query("SELECT * FROM bookings WHERE date = '#{date}'")
+  def self.booked?(id:, date:)
+    booked_acc = DatabaseConnection.query("SELECT * FROM bookings WHERE date = '#{date}' and host_id = '#{id}'")
     unless booked_acc.none?
       return Booking.new(id: booked_acc[0]["id"],
                          date: booked_acc[0]["date"],
