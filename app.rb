@@ -65,11 +65,10 @@ class MakersBnb < Sinatra::Base
     erb(:bookings)
   end
 
-  post '/accommodations/:id/bookings/new' do
-    Booking.create(date: params[:date], host_id: params[:id],
-                   tenant_id: @current_user)
+
+  post "/accommodations/:id/bookings/new" do
+    @booking = Booking.create(date: params[:date], host_id: params[:id], tenant_id: @current_user)
     @user_booked = User.find(id: session[:user_id])
-    p @user_booked
     erb(:confirmation)
   end
 

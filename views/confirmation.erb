@@ -11,13 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Booking Confirmation</title>
 </head>
 <body>
 <div class="confirmation-container">
-<header>
-<h2> Pack your bags <%= @user_booked.username %>!</h2>
-</header>
+
+<h1> Pack your bags <%= @user_booked.username %>!</h1>
+
+
+<h2>Your stay is booked for <%= @booking.date %> </h2>
+
+<form action="/accommodations" method="get">
+<input class="choose-again" type="submit" value="Back to Accommodations" />
+</form>
 
  <footer>
   <div class="credit">
@@ -25,9 +31,10 @@
     </div>
 </footer>
 </div>
+
 <form action="/accommodations/logout" method='post'>
   <input type="submit" value='Logout'>
 </form>
-    
+   
 </body>
 </html>
