@@ -3,6 +3,8 @@
     "coverage": {
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/features/accommodations_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -40,7 +42,7 @@
           1,
           1,
           1,
-          1,
+          null,
           1,
           null,
           null,
@@ -59,14 +61,17 @@
       },
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/features/bookings_spec.rb": {
         "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -74,6 +79,8 @@
       },
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/features/confirmation_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -89,6 +96,8 @@
       },
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/features/homepage_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -111,6 +120,8 @@
       },
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/features/login_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -129,6 +140,19 @@
           1,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/dominicmeddick/Documents/Makers/Week5/MakersBnB/spec/features/sign_up_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -139,6 +163,8 @@
       },
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/units/accommodation_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
@@ -184,6 +210,8 @@
       },
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/units/booking_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -234,6 +262,8 @@
       },
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/units/database_connection_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -264,6 +294,8 @@
       },
       "/Users/mikejeuga/Documents/Makers/bootcamp/Week-5/MakersBnB/spec/units/user_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
