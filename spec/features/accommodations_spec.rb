@@ -1,12 +1,10 @@
-# frozen_string_literal: true
-
-feature 'Create button' do
-  scenario 'should appear when you get to accommodations' do
-    visit '/'
-    click_button('Sign up')
-    click_button('Create user')
-    expect(current_path).to eq '/accommodations'
-    expect(page).to have_button 'Create'
+feature "Create button" do
+  scenario "should appear when you get to accommodations" do
+    visit "/"
+    click_button("Sign up")
+    click_button("Create user")
+    expect(current_path).to eq "/accommodations"
+    expect(page).to have_button "Become a host"
   end
 end
 

@@ -15,31 +15,37 @@
 </head>
 <body>
 <div class="booking-container">
+<header>
+<h2>Complete your booking</h2>
+</header>
 
+<main class="lets-book">
+
+<div class="left"></div>
+
+<div class="booking-recap">
  <% @booking_cart.map do |booking| %>
-  <li>
- <%= booking.title %> <br />
- <%= booking.description %> for £<%= booking.price %>
-  </li>
+
 
   <form class="confirmation-form" action="/accommodations/<%= booking.id %>/bookings/new" method="post">
-  <label for="">Name: </label><%= booking.title %> <br />
-  <label for="">Host: </label><%= booking.id %><br />
-  <label for="">Description: </label><%= booking.description %><br />
-  <label for="">Price: </label>£<%= booking.price %><br />
-  <label for="">Date: </label><input type="Date" name="date" class="date" required><br />
+  <label for="">Name: </label><%= booking.title %> <br /><br />
+  <label for="">Host: </label><%= booking.id %><br /><br />
+  <label for="">Description: </label><%= booking.description %><br /><br />
+  <label for="">Price: </label>£<%= booking.price %><br /><br />
+  <label for="">Date: </label><input type="Date" name="date" class="date" required><br /><br />
   <input class="Book-btn" type="submit" value="Book">
   </form>
   <% end %>
-  
+   </div>
+<div class="right"></div>
 
+   </main>
 
-   <form action="/accommodations" method="get">
-      <input class="choose-again" type="submit" value="Back to Accommodations" />
-   </form>
-   <form action="/accommodations/logout" method='post'>
-  <input type="submit" value='Logout'>
-</form>
+<footer>
+  <div class="credit">
+      <p>&copy; TooMuchSauce &nbsp;-&nbsp; Blue March 2021</p>
+    </div>
+</footer>
 </div>
 </body>
 </html>
