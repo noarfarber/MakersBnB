@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # feature "The booking page" do
 #   scenario "should have a form with a button" do
 #     visit "/accommodations/:id/bookings"

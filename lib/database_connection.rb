@@ -1,8 +1,10 @@
-require "pg"
+# frozen_string_literal: true
+
+require 'pg'
 
 class DatabaseConnection
   def self.setup(db)
-    @conn = PG.connect(dbname: db)
+    @conn = PG.connect(dbname: db, user: 'postgres', password: 'postgres')
   end
 
   def self.db
