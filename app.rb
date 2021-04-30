@@ -1,11 +1,10 @@
-# frozen_string_literal: true
-
-require 'sinatra/base'
-require 'sinatra/reloader'
-require './lib/accommodation'
-require './lib/user'
-require './lib/booking'
-require './database_connection_setup'
+require "sinatra/base"
+require "sinatra/reloader"
+require "sinatra/flash"
+require "./lib/accommodation"
+require "./lib/user"
+require "./lib/booking"
+require "./database_connection_setup"
 
 class MakersBnb < Sinatra::Base
   enable :sessions
@@ -74,5 +73,11 @@ class MakersBnb < Sinatra::Base
     erb(:confirmation)
   end
 
+  post "/accommodations/logout" do 
+    session[:user_id] = nil
+    redirect "/"
+  end
+
   run! if app_file == $PROGRAM_NAME
+
 end

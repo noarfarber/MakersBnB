@@ -12,8 +12,8 @@ def visit_home_sign_up
 end
 
 def sign_up_create_user_visit_accommodations_select
-  visit '/signup'
-  click_button('Create user')
-  visit '/accommodations'
-  click_button('Select')
-end
+  visit "/signup"
+  click_button("Create user")
+  visit "/accommodations"
+  click_button("Select")
+end 
