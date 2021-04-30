@@ -1,5 +1,6 @@
 require "sinatra/base"
 require "sinatra/reloader"
+require "sinatra/flash"
 require "./lib/accommodation"
 require "./lib/user"
 require "./lib/booking"
@@ -70,6 +71,7 @@ class MakersBnb < Sinatra::Base
 
   post "/accommodations/logout" do 
     session[:user_id] = nil
+    # flash[:notice] = "You have been logged out"
     redirect "/"
   end
 
