@@ -10,6 +10,9 @@ About the project:
 * We used collaboration tools like Trello, Slack and the diagramming tool Miro to organise and structure our work
 * Always and forever, team Too Much Sauce! ⚡️
 
+
+<img src="https://media.giphy.com/media/1tZ4Coe9v2H8A/giphy.gif" width="40" height="70" />
+
 MONDAY - Day 1:
 -------
 * This day was all about plannning and discussing our goals as a team
