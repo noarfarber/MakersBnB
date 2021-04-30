@@ -1,8 +1,10 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/features/accommodations_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/features/accommodations_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -40,6 +42,7 @@
           1,
           1,
           1,
+          null,
           1,
           1,
           null,
@@ -57,8 +60,9 @@
           null
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/features/bookings_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/features/bookings_spec.rb": {
         "lines": [
+          null,
           null,
           null,
           null,
@@ -72,29 +76,8 @@
           null
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/features/confirmation_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/features/confirmation_spec.rb": {
         "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/features/homepage_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
           null,
           null,
           1,
@@ -110,8 +93,19 @@
           null
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/features/login_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/features/homepage_spec.rb": {
         "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
           1,
           1,
           1,
@@ -123,8 +117,25 @@
           null
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/features/sign_up_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/features/login_spec.rb": {
         "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/features/sign_up_spec.rb": {
+        "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -138,8 +149,10 @@
           null
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/units/accommodation_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/units/accommodation_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
@@ -183,8 +196,10 @@
           null
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/units/booking_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/units/booking_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -211,8 +226,10 @@
           null
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/units/database_connection_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/units/database_connection_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -241,8 +258,10 @@
           null
         ]
       },
-      "/Users/kerrimcmahon/Documents/full-time/MakersBnB/spec/units/user_spec.rb": {
+      "/Users/noafarber/Projects/week_5/MakersBnB/spec/units/user_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
@@ -294,6 +313,6 @@
         ]
       }
     },
-    "timestamp": 1619717987
+    "timestamp": 1619730455
   }
 }
