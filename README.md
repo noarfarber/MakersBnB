@@ -11,7 +11,7 @@ About the project:
 * Always and forever, team Too Much Sauce! ⚡️
 
 
-<img src="https://media.giphy.com/media/1tZ4Coe9v2H8A/giphy.gif" width="40" height="70" />
+<img src="https://media.giphy.com/media/1tZ4Coe9v2H8A/giphy.gif" width="150" height="150" />
 
 MONDAY - Day 1:
 -------
