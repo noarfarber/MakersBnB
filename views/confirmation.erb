@@ -15,6 +15,10 @@
 </head>
 <body>
 <div class="confirmation-container">
+  
+<header>
+<h2><%= flash[:success] %></h2>
+</header>
 
 <h1> Pack your bags <%= @user_booked.username %>!</h1>
 
@@ -24,6 +28,9 @@
 <form action="/accommodations" method="get">
 <input class="choose-again" type="submit" value="Back to Accommodations" />
 </form>
+
+<h2> Pack your bags <%= @user_booked.username %>!</h2>
+
 
  <footer>
   <div class="credit">
