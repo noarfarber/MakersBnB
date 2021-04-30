@@ -1,5 +1,7 @@
-require "pg"
-require_relative "./database_connection"
+# frozen_string_literal: true
+
+require 'pg'
+require_relative './database_connection'
 
 class Accommodation
   attr_reader :id, :title, :price, :description, :user_id
@@ -14,19 +16,19 @@ class Accommodation
 
   def self.add(title:, price:, description:, user_id:)
     new_space = DatabaseConnection.query("INSERT INTO accommodation(title, price, description, user_id) VALUES('#{title}', '#{price}', '#{description}', '#{user_id}')
-        RETURNING id, title, price, description, user_id")
-    Accommodation.new(id: new_space[0]["id"], title: new_space[0]["title"], price: new_space[0]["price"], description: new_space[0]["description"], user_id: new_space[0]["user_id"])
+      RETURNING id, title, price, description, user_id")
+    Accommodation.new(id: new_space[0]['id'], title: new_space[0]['title'], price: new_space[0]['price'], description: new_space[0]['description'], user_id: new_space[0]['user_id'])
   end
 
   def self.all
-    new_space = DatabaseConnection.query("SELECT * FROM accommodation;")
+    new_space = DatabaseConnection.query('SELECT * FROM accommodation;')
     new_space.map do |new_space|
-      Accommodation.new(id: new_space["id"], title: new_space["title"], price: new_space["price"], description: new_space["description"], user_id: new_space["user_id"])
+      Accommodation.new(id: new_space['id'], title: new_space['title'], price: new_space['price'], description: new_space['description'], user_id: new_space['user_id'])
     end
   end
 
   def self.find(id:)
     new_space = DatabaseConnection.query("SELECT * FROM accommodation WHERE id = '#{id}';")
-    Accommodation.new(id: new_space[0]["id"], title: new_space[0]["title"], price: new_space[0]["price"], description: new_space[0]["description"], user_id: new_space[0]["user_id"])
+    Accommodation.new(id: new_space[0]['id'], title: new_space[0]['title'], price: new_space[0]['price'], description: new_space[0]['description'], user_id: new_space[0]['user_id'])
   end
 end
