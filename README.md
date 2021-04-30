@@ -49,6 +49,19 @@ As a user
 So that I can be remembered
 I want to be able to register to MakersBnB
 ```
+THURSDAY - Day 4:
+-------
+* We kept working on our `User` class and started working on the next user story and the creation of our `Booking` class:
+```
+As a user
+So that I can be remembred without signing up
+I want to be able to log in and out
+```
+* We also implemented a `booked?` method in the `Booking` class which checked the availability of the accommodation
+
+FRIDAY - Day 5:
+-------
+* This day was about finalizing our project and the presentation
 
 How to check in to your MakersBnB:
 -------
@@ -65,6 +78,8 @@ Database setup:
 3. Connect to the database using the `pqsl` command `\c makersBnB;`
 4. Run the query we have saved in the file `01_create_accommodation.sql`
 5. To create the second users table run the query saved in `02_creater_users.sql`
+6. Run the query we have saved in the file `03_adding_foreign_key.sql`
+7. To create the third bookings table run the query saved in `04_create_bookings.sql`
 
 Testing database setup:
 -------
@@ -73,6 +88,16 @@ Testing database setup:
 3. Connect to the database using the `pqsl` command `\c makersBnB_test;`
 4. Run the query we have saved in the file `01_create_accommodation.sql`
 5. To create the second users table run the query saved in `02_creater_users.sql`
+6. Run the query we have saved in the file `03_adding_foreign_key.sql`
+7. To create the third bookings table run the query saved in `04_create_bookings.sql`
 
-Technologies used:
+Built using:
 -------
+* Sinatra
+* RSpec
+* Capybara
+* PostgreSQL
+* Bcrypt
+* Ruby
+* HTML
+* CSS 

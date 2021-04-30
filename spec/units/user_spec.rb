@@ -2,7 +2,7 @@
 
 require 'user'
 require 'bcrypt'
-# Metrics/BlockLength: Block has too many lines.
+
 describe User do
   context '.all' do
     it 'lists all users instances' do
