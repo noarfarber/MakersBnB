@@ -4,7 +4,7 @@ feature "Create button" do
     click_button("Sign up")
     click_button("Create user")
     expect(current_path).to eq "/accommodations"
-    expect(page).to have_button "Create"
+    expect(page).to have_button "Become a host"
   end
 end
 

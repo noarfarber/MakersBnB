@@ -16,13 +16,17 @@
 <body>
 <div class="accommodation-container">
 <header>
-<h2> Welcome  <%= @user.username %></h2>
+<h2> Welcome  <%= @user.username %></h2> <br /> 
 <%if flash[:notice] %>
 <h3><%= flash[:notice] %></h3>
 <% end %>
 </header>
 
-<div class="accommodation-list" > Accommodations
+<main class="main-accom">
+
+<div class="left"></div>
+
+<div class="accommodation-list" >
 
 <% @accommodations.map do |accommodation| %>
   <li>
@@ -34,16 +38,20 @@
    </form>
   </li>
   <% end %>
-</div>
 
-<div class="host-making">Become a host
+  <div class="host-making">
 <form class="creation" action="/accommodations/add" method="post">
 <br /><label for="">Name: </label><input type="text" name="title">
 <label for="">Price: </label><input type="text" name="price"> <br />
 <label for="">Description: </label><input type="text" name="description" style="width: 300px; height:60px;">
-<input class="create-btn" type="submit" name="Create" value="Create">
+<input class="create-btn" type="submit" name="Create" value="Become a host">
 </form>
 </div>
+</div>
+
+<div class="right"></div>
+
+</main>
  <footer>
   <div class="credit">
       <p>&copy; TooMuchSauce &nbsp;-&nbsp; Blue March 2021</p>
